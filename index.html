@@ -875,6 +875,11 @@ printf("Result is: %d", num); // আউটপুট দেখানো</pre>
 </footer>  
 
 <script>
+  
+if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "https://sadmansakif21-jpg.github.io/loginpage/";
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     const loaderScreen = document.getElementById('premium-loader-screen');
     setTimeout(function() {
